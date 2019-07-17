@@ -1,7 +1,7 @@
 import numpy as np
 import matmul
 
-a = matmul.readm('A.csv')
+A = matmul.readm('A.csv')
 b = matmul.readn('b.csv')
 
 def guass(A,b):
@@ -20,5 +20,5 @@ def guass(A,b):
       x[k] = (b[k] - np.dot(a[k,k+1:n], x[k+1:n]))/a[k,k]
     return x
 
-for i in guass(a,b):
+for i in guass(A,b):
     print(i)
