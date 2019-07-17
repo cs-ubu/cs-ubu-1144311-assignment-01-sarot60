@@ -1,8 +1,8 @@
 import numpy as np
 import matmul
 
-A = matmul.readm('A.csv')
-b = matmul.readn('b.csv')
+A = matmul.readm('A.txt')
+b = matmul.readn('b.txt')
 
 def guass(A,b):
     a = np.array(A)
